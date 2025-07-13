@@ -1,7 +1,10 @@
-This is an instagram content publisher repo 
+     
+# Instagram Content Publisher Repository
 
-It allows u to post content on your instagram acc without using an app using only vs code 
-I used the library instagrapi and imported client from it here is  the ref doc for the library "https://subzeroid.github.io/instagrapi/"
-I used combined OOP,functional and procedural programming paradims for effective code structure 
-The input section username and password doesn"t have error handling so it will crush whenever u enter  wrong data
-The network section  also doesn't have error handling so i crushes when u don't use internet     
+This repository allows you to post content on your Instagram account without using an app, simply by utilizing Visual Studio Code. 
+
+I used the library **instagrapi** and imported the client from it. Here is the reference documentation for the library: https://subzeroid.github.io/instagrapi/.
+
+I combined object-oriented, functional, and procedural programming paradigms to create an effective code structure.
+
+Please note that the input section for the username and password does not include error handling; therefore, it will crash if you enter incorrect data. Additionally, the network section also lacks error handling, so it will crash if there is no internet connection.
