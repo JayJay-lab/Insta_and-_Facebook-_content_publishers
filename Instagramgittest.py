@@ -9,14 +9,28 @@ from instagrapi import Client
 cl = Client()
 # Login to Instagram using the provided username and password
 def login_info():
+    
+       
+    username = input("Enter your Instagram username: ")
+    password = input("Enter your Instagram password: ")
+            
+            
+        
 
-    username = input("your_username ")
-    password = input("your_password " )
+    
+
+
+   
     login_info = cl.login(username, password)
     return login_info
 
-
-login_info()
+while True:
+        try:
+            login_info()            
+            break
+        except Exception as e:
+            print(f"Login failed: {e}. Please try again.")
+            continue
 # Create a class to handle media uploads
 class Media_upload:
     def __init__(self, path_for_media, caption_for_the_media):
@@ -55,19 +69,24 @@ class Media_upload:
 
 
 def action_selection():
-    action = input("Enter the action you want to perform (photo_upload/video_upload/album_upload/clip_upload): ")
-    media = Media_upload("", "")
-    if action == "photo_upload":
-        return media.photo_upload()
-    elif action == "video_upload":
-        return media.video_upload()
-    elif action == "album_upload":
-        return media.album_upload()
-    elif action == "clip_upload":
-        return media.clip_upload()
-    else:
-        print("Invalid action selected.")
-        return None
+  while True:
+          action = input("Enter the action you want to perform (photo_upload/video_upload/album_upload/clip_upload): ")
+
+          if action in ["photo_upload", "video_upload", "album_upload", "clip_upload"]:
+                media = Media_upload("", "")
+                if action == "photo_upload":
+                    return media.photo_upload()
+                elif action == "video_upload":
+                    return media.video_upload()
+                elif action == "album_upload":
+                    return media.album_upload()
+                elif action == "clip_upload":
+                    return media.clip_upload()
+            
+         
+           
+          else:     
+              print("Invalid action selected. Please try again.")
 
 
 # Call the action_selection function to perform the desired media upload
