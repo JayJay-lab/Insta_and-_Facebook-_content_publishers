@@ -1,12 +1,19 @@
 import Instagramgittest
+import facebook_api
+
+
+
+
 
 
 def main():
 
 
+   
 
 
-     
+    facebook_api.post_to_facebook()
+
    
 
     # Login to Instagram and perform media uploads
