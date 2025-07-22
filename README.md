@@ -89,7 +89,7 @@ FACEBOOK_ACCESS_TOKEN = 'your_page_access_token'
 ---
 
 ## 🤝 Contributing
-
+This is a pero
 Contributions are welcome!\
 Feel free to fork the repository and submit a pull request.
 
@@ -109,4 +109,5 @@ Feel free to fork the repository and submit a pull request.
 
 Created by **LuckyPhomane56@gmail.com** — feel free to reach out or report issues via GitHub!
 
-
+##Disclamer 
+Please note that this code is a open source project and shouldn't be used for profit.
