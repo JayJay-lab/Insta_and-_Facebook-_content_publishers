@@ -9,7 +9,8 @@ I used the library **instagrapi** and imported the client from it. Here is the r
 
 I combined object-oriented, functional, and procedural programming paradigms to create an effective code structure.
 
-Please note that the input section for username and password does not include error handling; therefore, it will crash if incorrect data is entered. Additionally, the network section also lacks error handling, so it will crash if there is no internet connection.
+I added some error handling for input space in Instagram
+
 
 #For Facebook
 
