@@ -12,7 +12,7 @@ def main():
    
 
 
-    facebook_api.post_to_facebook()
+    #facebook_api.post_to_facebook()
 
    
 
