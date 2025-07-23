@@ -30,15 +30,21 @@ def login_info():
 class Media_upload:
     def __init__(self, path_for_media, caption_for_the_media):
         # Upload the media to Instagram with the provided path and caption
-        self.path_for_media = input("path_for_the_media") 
-        while True:
+        self.path_for_media = path_for_media
+       
+
+
+        self.caption_for_the_media = caption_for_the_media
+
+
+    def __getattribute__(self):
+        self.path_for_media = input("path_for_the_media")
+        while True: 
             self.path_for_media = input("Enter the path to the media file: ") 
             if os.path.exists(self.path_for_media):
                 break
             else:
-                print("Invalid path. Please enter a valid path to the media file.") 
-
-
+                print("Invalid path. Please enter a valid path to the media file.")
         self.caption_for_the_media = input("caption_for_the_media")
 
 
@@ -64,7 +70,7 @@ class Media_upload:
     def clip_upload(self):
         
         return cl.clip_upload(
-            self.path_fr_media,
+            self.path_for_media,
             self.caption_for_the_media
         )   
 
@@ -74,8 +80,10 @@ def action_selection():
           action = input("Enter the action you want to perform (photo upload/video upload/album upload/clip upload): ")
           action = action.strip().lower()
 
-          if action in ["photo_upload", "videoupload", "albumupload", "clipupload"]:
-                media = Media_upload("", "")
+          if action in ["photoupload", "videoupload", "albumupload", "clipupload"]:
+                media = Media_upload("","")
+                media.__getattribute__()
+                # Perform the selected action based on user input
                 if action == "photoupload":
                     return media.photo_upload()
                 elif action == "videoupload":
