@@ -1,7 +1,7 @@
      
 # 📱 Social Media Poster
 
-A simple Python script to automatically post images and text to **Instagram** and **Facebook**.
+A simple Python script to automatically post images to **Instagram** and **Facebook**.
 
 ---
 
@@ -26,7 +26,6 @@ A simple Python script to automatically post images and text to **Instagram** an
   ```
 - Provide your **Instagram username** and **password** in the script.
 
-> **Note**: Instagram often blocks unofficial APIs, so functionality may break depending on Instagram’s API changes.
 
 ### Facebook
 
@@ -39,27 +38,15 @@ A simple Python script to automatically post images and text to **Instagram** an
 - Create a **Facebook Developer** account: [developers.facebook.com](https://developers.facebook.com)
 - Create an app and retrieve:
   - App ID
-  - Page ID
   - Page Access Token with `pages_manage_posts` and `pages_read_engagement` permissions.
 
 ---
 
-## ⚙️ Configuration
+#Logging in>🔑🔒🔓
+You are required to enter access token , Instagram username and password
 
-Edit the script to include your credentials:
+**Note**Do not show anyone your credentials
 
-```python
-# Instagram
-INSTAGRAM_USERNAME = 'your_username'
-INSTAGRAM_PASSWORD = 'your_password'
-
-# Facebook
-FACEBOOK_APP_ID = 'your_app_id'
-FACEBOOK_PAGE_ID = 'your_page_id'
-FACEBOOK_ACCESS_TOKEN = 'your_page_access_token'
-```
-
-> Keep these credentials secure. Do **not** hardcode sensitive data in production code.
 
 ---
 
@@ -89,7 +76,7 @@ FACEBOOK_ACCESS_TOKEN = 'your_page_access_token'
 ---
 
 ## 🤝 Contributing
-This is a pero
+This is a repo
 Contributions are welcome!\
 Feel free to fork the repository and submit a pull request.
 
